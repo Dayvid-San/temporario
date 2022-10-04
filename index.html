@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=sec, initial-scale=1.0">
+    <title>Programação Funcional</title>
+    <link rel="stylesheet" href="styleEncomenda.css">
+</head>
+
+<body>
+    <section class="big-card">
+        <form id="formulario">
+
+            <div>
+                <p>
+                    Período
+                </p>
+                <input type="text" value="2020.1" id="periodo" />
+            </div>
+            <div>
+                <p>
+                    Codigo
+                </p>
+                <input type="text" value="COMP007" id="codigo" />
+            </div>
+            <div>
+                <p>
+                    Carga Horaria
+                </p>
+
+                <input type="number" value="60" id="cargaHoraria" />
+            </div>
+            <div>
+                <p>
+                    Frequencia
+                </p>
+                <input type="number" value="98" id="frequencia" />
+            </div>
+            <div>
+                <p>
+                    Nota
+                </p>
+                <input type="number" id="nota" value="10"/>
+            </div>
+            <div>
+                <button type="submit">Adicionar</button>
+                
+        </form>
+        <input type="text" id="escolhaDepartamento">
+    </section>
+    <div id="showResultado">
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>
+                        Períodos
+                    </th>
+                    <th>
+                        Código
+                    </th>
+                    <th>
+                        Carga Horária
+                    </th>
+                    <th>
+                        Nota
+                    </th>
+                    <th>
+                        Frequência
+                    </th>
+                </tr>
+            </thead>
+            <tbody class="active-row" id="resultado">
+                
+            </tbody>      
+        </table>
+        
+        <!--
+            <div id="resultado">
+
+        </div>
+    -->
+</div>
+<table class="styled-table" id="boxPrincipal">
+    <thead>
+        <tr>
+            <th>
+                Tempo Curso
+            </th>
+            <th>
+                Média Geral
+            </th>
+            <th>
+                Desvio padrão
+            </th>
+            <th>
+                Aprovado em:
+            </th>
+            <th>
+                Reprovado em:
+            </th>
+            <th>
+                Média geral (Departamento)
+            </th>
+        </tr>
+    </thead>
+<tbody class="active-row" id="respPedido">
+    
+</tbody>      
+</table>
+
+
+
+    <script src="index.js"></script>
+    <script type="text/javascript">
+        console.log('Olá')
+    </script>
+</body>
+
+</html>
